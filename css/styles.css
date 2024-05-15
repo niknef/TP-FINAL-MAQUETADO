@@ -1,0 +1,129 @@
+main , nav , header , footer{
+    display:block;
+}
+/*--------------------root--------------------*/
+:root {
+    --color_primario: #B153C6;
+    --color_primario_suave: #F82DE8;
+    --color_blanco: #fff;
+    --color_secundario: #442DDF;
+    --color_secundario_oscuro: #150A20;
+    --color_gris: #E2E2E2;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+/*--------------------RESET--------------------*/
+* {
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , em{
+    font-size: 1em;
+    font-weight:  inherit;
+    font-style: inherit;
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+/*--------------------BODY--------------------*/
+body{
+    background-color: #fff;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*---------------HEADER---------------*/
+
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+}
+
+.menu_hamburguesa{
+    display: none;
+}
+
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+    color: var(--color_blanco);
+}
+
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+}
+
+.link {
+    font-size: 2em;
+    color: var(--color_blanco);
+}
+
+.banner {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .labe_hamburguesa {
+        display: none;
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+    .link:hover{
+        background-color: #5f1192;
+    }
+}
