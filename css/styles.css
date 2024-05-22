@@ -81,10 +81,9 @@ span{
     height: calc(100vh - var(--altura_header));
 }
 
-.logo {
-    color: var(--color_secundario_oscuro);
+.logo{
+    width: 80px;
 }
-
 .list_icon {
     color: var(--color_secundario_oscuro);
     cursor: pointer;
@@ -105,6 +104,7 @@ span{
     gap: 3rem;
     transition: all .3s;
 }
+
 .ul_links a:active{
     color: var(--color_primario);
 }
@@ -117,30 +117,24 @@ span{
     color: var(--color_primario);
 }
 
-
-
 .link {
     font-size: 2em;
     color: var(--color_secundario_oscuro);
 }
 
-.ul_links li:last-child{
+.ul_links li:last-child a{
     background-color: var(--color_primario);
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.ul_links li:last-child:hover{
-    opacity: 0.8;
-}
-
-.ul_links li:last-child a{
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     color: var(--color_gris);
 }
 
 .ul_links li:last-child a:hover{
     color: var(--color_secundario_oscuro);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 /*---------------banner---------------*/
@@ -156,7 +150,7 @@ span{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.banner h2 {
+.banner h1 {
     color: var(--color_secundario_oscuro);
     font-size: 2.5em;
     font-weight: bold;
@@ -175,7 +169,7 @@ span{
     text-align: center;
 }
 
-#dubai h3{
+#dubai h2{
     font-size: 1.5em;
     font-weight: bold;
     margin: 2.5em 0 1em 0;
@@ -204,7 +198,7 @@ span{
     align-items: center;
 }
 
-#historia h3{
+#historia h2{
     width: 70%;
     align-self: flex-start;
     margin: 2rem 0;
@@ -257,7 +251,7 @@ span{
     }
 }
 
-#mapa h3{
+#mapa h2{
     color: var(--color_blanco);
     font-size: 1.5em;
 }
@@ -280,7 +274,7 @@ span{
 }
 
 #mapa iframe{
-    width: 360px;
+    width: 340px;
     height: 300px;
     border-radius: 10px;
     margin: 1rem 0;
@@ -289,7 +283,7 @@ span{
 
 
 /*---------------Imagenes---------------*/
-#imagenes h3{
+#imagenes h2{
     display: none;
 }
 .container {
@@ -354,6 +348,155 @@ span{
 	opacity: 1;
 }
 
+/*---------------Cultura---------------*/
+#cultura{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cultura h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.acordeon{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem 0;
+    background-color: var(--color_blanco);
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+details{
+    cursor: pointer;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color_primario);
+}
+summary{
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 500;
+    list-style: url(../icon/arrow-right-solid.svg);
+}
+
+details[open] summary{
+    list-style: url(../icon/arrow-down-solid.svg);
+}
+
+details p{
+    font-size: 1em;
+    text-align: left;
+    margin: 1rem 0.5rem;
+}
+
+details span{
+    font-weight: normal;
+}
+
+details[open]{
+    list-style: url(../icon/arrow-down-solid.svg);
+}
+/*---------------Clima---------------*/
+#clima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clima h2{
+    width: 70%;
+    align-self: flex-start;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 2rem;
+    background: rgb(255,253,253);
+    background: linear-gradient(270deg, rgba(226,226,226,1) 10%, rgba(68,45,223,1) 70%);
+    color: var(--color_blanco);
+    font-size: 1.5em;
+}
+
+#clima p{
+    width: 80%;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+#clima picture img{
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*---------------footer---------------*/
+footer{
+    margin: 2rem 0 0 0;
+    background-color: var(--color_secundario);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 2rem 0;
+}
+
+footer h2{
+    color: var(--color_blanco);
+    font-size: 1.2em;
+}
+
+footer p{
+    color: var(--color_blanco);
+}
+
+footer ul{
+    color: var(--color_blanco);
+}
+
+#iconos{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+#iconos li a{
+    display: block;
+	background: url(../icon/iconos.webp);
+	width: 42px;
+	height: 42px;
+	font-size:0px
+}
+
+#iconos #fb a{
+    background-position: -145px 42px;
+}
+
+#iconos #tw a{
+    background-position: -96px 42px;
+}
+
+#iconos #yt a{
+    background-position: 0px 42px;
+}
+
+#iconos #ig a{
+    background-position: -49px 42px;
+}
 /*---------------tablet---------------*/
 @media (min-width:480px){
     /*---------------carrousel---------------*/
@@ -392,10 +535,11 @@ span{
         color: #5f1192;
     }
     .ul_links li:last-child{
-        background-color: var(--color_primario);
         padding: 1rem;
         border-radius: 10px;
+        cursor: pointer;
     }
+
     /*---------------carrousel---------------*/
     .slider-wrapper {
         max-width: 889px;
