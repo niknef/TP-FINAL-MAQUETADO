@@ -41,7 +41,7 @@ ol,ul{
 
 /*--------------------BODY--------------------*/
 body{
-    background-color: #fff;
+    background-color: var(--color_gris);
     margin: auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -59,7 +59,7 @@ span{
 
 .header {
     height: var(--altura_header);
-    background-color: var(--color_blanco);
+    background-color: var(--color_gris);
     border-bottom: 1px solid #B153C6;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -92,7 +92,7 @@ span{
 
 .ul_links {
     width: 100%;
-    background-color: var(--color_blanco);
+    background-color: var(--color_gris);
     position: absolute;
     top: var(--altura_header);
     left: 0;
@@ -128,7 +128,7 @@ span{
     background-color: var(--color_primario);
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .ul_links li:last-child:hover{
@@ -193,7 +193,7 @@ span{
 #dubai iframe{
     margin: 1rem 0;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 /*---------------historia---------------*/
@@ -208,9 +208,9 @@ span{
     width: 70%;
     align-self: flex-start;
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 1rem 0 1rem 2rem;
     background: rgb(255,253,253);
-    background: linear-gradient(270deg, rgba(255,253,253,1) 0%, rgba(68,45,223,1) 100%);
+    background: linear-gradient(270deg, rgba(226,226,226,1) 10%, rgba(68,45,223,1) 70%);
     color: var(--color_blanco);
     font-size: 1.5em;
 }
@@ -292,9 +292,84 @@ span{
 #imagenes h3{
     display: none;
 }
+.container {
+	padding: 2rem 0;
+}
+
+.slider-wrapper {
+	position: relative;
+    max-width: 340px;
+	margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+
+.slider {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 10px;
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	scroll-snap-align: start;
+	object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider picture{
+    width: 340px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
 
 /*---------------tablet---------------*/
-@media (min-width:768px){
+@media (min-width:480px){
+    /*---------------carrousel---------------*/
+    .slider-wrapper {
+        max-width: 480px;
+        height: 270px;
+    }
+    .slider picture{
+        width: 480px;
+        height: 270px;
+    }
+
+}
+/*---------------desktop---------------*/
+@media (min-width:800px){
+    /*---------------menu---------------*/
     .labe_hamburguesa {
         display: none;
     }
@@ -315,5 +390,19 @@ span{
     }
     .link:hover{
         color: #5f1192;
+    }
+    .ul_links li:last-child{
+        background-color: var(--color_primario);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    /*---------------carrousel---------------*/
+    .slider-wrapper {
+        max-width: 889px;
+        height: 500px;
+    }
+    .slider picture{
+        width: 889px;
+        height: 500px;
     }
 }
