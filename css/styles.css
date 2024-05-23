@@ -1,6 +1,7 @@
 main , nav , header , footer{
     display:block;
 }
+
 /*--------------------root--------------------*/
 :root {
     --color_primario: #B153C6;
@@ -25,7 +26,6 @@ main , nav , header , footer{
 html{
     scroll-behavior: smooth;
 }
-
 
 h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , em{
     font-size: 1em;
@@ -56,7 +56,6 @@ span{
 }   
 
 /*---------------HEADER---------------*/
-
 .header {
     height: var(--altura_header);
     background-color: var(--color_gris);
@@ -84,6 +83,7 @@ span{
 .logo{
     width: 80px;
 }
+
 .list_icon {
     color: var(--color_secundario_oscuro);
     cursor: pointer;
@@ -138,7 +138,6 @@ span{
 }
 
 /*---------------banner---------------*/
-
 .banner {
     background-image: url(../img/bg-db-mobile.jpg);
     background-size: cover;
@@ -281,11 +280,11 @@ span{
     box-shadow: rgba(255, 255, 255, 0.7) 0px 3px 8px;
 }
 
-
 /*---------------Imagenes---------------*/
 #imagenes h2{
     display: none;
 }
+
 .container {
 	padding: 2rem 0;
 }
@@ -384,17 +383,32 @@ details{
 }
 summary{
     cursor: pointer;
+    padding-left: 2rem;
     font-size: 1.2em;
     font-weight: 500;
-    list-style: url(../icon/arrow-right-solid.svg);
+    list-style: none;
+    background-image: url(../icon/arrow-right-solid.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
 }
 
 details[open] summary{
-    list-style: url(../icon/arrow-down-solid.svg);
+    list-style: none;
+    padding-left: 2rem;
+    background-image: url(../icon/arrow-down-solid.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
 }
 
 details p{
     font-size: 1em;
+    text-align: left;
+    margin: 1rem 0.5rem;
+}
+
+details dl{
     text-align: left;
     margin: 1rem 0.5rem;
 }
@@ -406,6 +420,7 @@ details span{
 details[open]{
     list-style: url(../icon/arrow-down-solid.svg);
 }
+
 /*---------------Clima---------------*/
 #clima{
     display: flex;
@@ -497,25 +512,31 @@ footer ul{
 #iconos #ig a{
     background-position: -49px 42px;
 }
+
 /*---------------tablet---------------*/
 @media (min-width:480px){
+
     /*---------------carrousel---------------*/
     .slider-wrapper {
         max-width: 480px;
         height: 270px;
     }
+
     .slider picture{
         width: 480px;
         height: 270px;
     }
 
 }
+
 /*---------------desktop---------------*/
 @media (min-width:800px){
+
     /*---------------menu---------------*/
     .labe_hamburguesa {
         display: none;
     }
+
     .ul_links{
         background-color: transparent;
         position: static;
@@ -524,6 +545,7 @@ footer ul{
         flex-direction: row;
         gap: 2rem;
     }
+
     .link{
         font-size: 1.2rem;
         transition: all .3s;
@@ -531,9 +553,11 @@ footer ul{
         color: var(--color_secundario_oscuro);
         font-weight: bold;
     }
+
     .link:hover{
         color: #5f1192;
     }
+    
     .ul_links li:last-child{
         padding: 1rem;
         border-radius: 10px;
