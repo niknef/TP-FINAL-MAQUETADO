@@ -188,6 +188,8 @@ span{
 }
 
 #dubai iframe{
+    width: 80vw;
+    height: 45vw;
     margin: 1rem 0;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -600,11 +602,10 @@ footer ul{
 
 #requisitos div:last-child{
     background-color: var(--color_blanco);
-    margin: 1rem;
+    margin: 1.8rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: rgba(255, 255, 255, 0.7) 0px 3px 8px;
-    padding: 1rem;
-
 }
 
 #requisitos div:last-child h3{
@@ -617,8 +618,86 @@ footer ul{
 #requisitos div:last-child p{
     color: var(--color_secundario_oscuro);
     font-size: 1rem;
-    margin: 0.5rem;
+    margin: 0 0 0.5rem 1rem;
 }
+
+#requisitos picture{
+    border-radius: 10px;
+}
+
+#requisitos picture img{
+    border-radius: 10px;
+}
+
+/*---------------Moneda---------------*/
+#moneda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#moneda h2{
+    width: 70%;
+    align-self: flex-start;
+    margin: 2rem 0;
+    padding: 1rem 0 1rem 2rem;
+    background: rgb(255,253,253);
+    background: linear-gradient(270deg, rgba(226,226,226,1) 10%, rgba(68,45,223,1) 70%);
+    color: var(--color_blanco);
+    font-size: 1.5em;
+}
+
+#moneda p{
+    width: 80%;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+#moneda picture {
+    border-radius: 10px;
+}
+
+#moneda picture img{
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#moneda h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color_primario);
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+
+}
+/*---------------Cuando---------------*/
+#cuando{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cuando h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1.5rem;
+}
+
+#cuando picture {
+    border-radius: 10px;
+}
+
+#cuando picture img{
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
 /*---------------eventos---------------*/
 #eventos{
     display: flex;
@@ -633,6 +712,87 @@ footer ul{
     font-weight: bold;
     margin: 1rem;
     color: var(--color_secundario_oscuro);
+}
+
+#eventos h3{
+    font-size: 1.2rem;
+    color: var(--color_primario);
+    text-align: start;
+}
+.event-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.event-card{
+    width: 320px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: var(--color_blanco);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.event-card:hover{
+    box-shadow: rgba(248, 45, 232, 0.3)
+    0px 3px 8px;
+}
+
+.event-card img{
+    width: 320px;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+}
+
+.event-card-content{
+    padding: 1rem;
+}
+
+.event-card-content p{
+    margin: 0.5rem;
+}
+
+.event-card-content p:last-child{
+    color: var(--color_primario);
+    font-style: italic;
+}
+
+/*---------------innovacion---------------*/
+
+#innovacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+#innovacion h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: var(--color_secundario_oscuro);
+}
+
+#innovacion h3{
+    font-size: 1.8rem;
+    color: var(--color_primario);
+}
+
+#innovacion p{
+    width: 80%;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#innovacion iframe{
+    width: 80vw;
+    height: 45vw;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 /*---------------tablet---------------*/
 @media (min-width:480px){
