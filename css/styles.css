@@ -770,7 +770,7 @@ footer ul{
 
 .event-card img{
     width: 320px;
-    height: 180px;
+    height: auto;
     border-radius: 10px 10px 0 0;
 }
 
@@ -822,6 +822,97 @@ footer ul{
     margin: 1rem 0;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*---------------itinerario---------------*/
+#lugares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#lugares h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1rem;
+    color: var(--color_secundario_oscuro);
+}
+
+#lugares h3{
+    font-size: 1.2rem;
+    color: var(--color_primario);
+    text-align: left;
+}
+
+/*---------------actividades---------------*/
+#actividades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#actividades h2{
+    width: 70%;
+    align-self: flex-start;
+    margin: 2rem 0;
+    padding: 1rem 0 1rem 2rem;
+    background: rgb(255,253,253);
+    background: linear-gradient(270deg, rgba(226,226,226,1) 10%, rgba(68,45,223,1) 70%);
+    color: var(--color_blanco);
+    font-size: 1.5em;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 2rem
+}
+
+.card{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background: var(--i);
+    display: inline-block;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51 , .8);
+
+}
+
+.content{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.548);
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color_secundario_oscuro);
+    margin: 1rem;
+}
+
+.card a{
+    font-size: 1em;
+    color: var(--color_secundario);
+    text-decoration: underline;
+}
+
+.card:hover .content{
+    opacity: 1;
 }
 /*---------------tablet---------------*/
 @media (min-width:480px){
@@ -950,4 +1041,8 @@ footer ul{
         width: 889px;
         height: 500px;
     }
+}
+
+#creek, #museo, #mezquita, #khalifa, #fuente, #arab{
+    scroll-margin-block: 78px;
 }
