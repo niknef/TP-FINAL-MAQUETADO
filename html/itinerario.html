@@ -4,68 +4,70 @@
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/styles.css">
-        <link rel ="icon" href="icon/burj-al-arab.ico">
+        <link rel ="icon" href="/icon/burj-al-arab.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
     <title>Itinerario-Dubái</title>
 </head>
 <body>
-    <!-- Header -->
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+        
+        <a href="../index.html"><img src="/icon/dubailogo.svg" alt="Logo Dubái Turismo" class="logo"></a>
 
-    <header class="header">
-        <nav class="navbar">
-            
-            <a href="../index.html"><img src="/icon/dubailogo.svg" alt="Logo Dubái Turismo" class="logo"></a>
+        <label class="labe_hamburguesa" for="menu_hamburguesa">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="list_icon"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+            </svg>
+        </label>
 
-            <label class="labe_hamburguesa" for="menu_hamburguesa">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="35"
-                    height="35"
-                    fill="currentColor"
-                    class="list_icon"
-                    viewBox="0 0 16 16"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                    />
-                </svg>
-            </label>
+        <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa">
 
-            <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa">
+        <ul class="ul_links">
+            <li class="li_links">
+                <a href="../index.html" class="link">Inicio</a>
+            </li>
+            <li class="li_links">
+                <a href="informacion.html" class="link">Información</a>
+            </li>
+            <li class="li_links">
+                <a href="#" class="link">Itinerario</a>
+                <ol>
+                    <li><a href="#creek">Dubái Creek</a></li>
+                    <li><a href="#museo">Museo de Dubái</a></li>
+                    <li><a href="#mezquita">Mezquita Jumeirah</a></li>
+                    <li><a href="#khalifa">Burj Khalifa</a></li>
+                    <li><a href="#fuente">Fuente de Dubái</a></li>
+                    <li><a href="#arab">Burj Al Arab</a></li>
+                </ol>
+            </li>
+            <li class="li_links boton">
+                <a href="contacto.html" class="link">Contacto</a>
+            </li>
+        </ul>
 
-            <ul class="ul_links">
-                <li class="li_links">
-                    <a href="../index.html" class="link">Inicio</a>
-                </li>
-                <li class="li_links">
-                    <a href="informacion.html" class="link">Información</a>
-                </li>
-                <li class="li_links">
-                    <a href="#" class="link">Itinerario</a>
-                    <ol class="visitemos">
-                        <li><a href="#creek">Dubái Creek</a></li>
-                        <li><a href="#museo">Museo de Dubái</a></li>
-                        <li><a href="#mezquita">Mezquita Jumeirah</a></li>
-                        <li><a href="#khalifa">Burj Khalifa</a></li>
-                        <li><a href="#fuente">Fuente de Dubái</a></li>
-                        <li><a href="#arab">Burj Al Arab</a></li>
-                    </ol>
-                </li>
-                <li class="li_links">
-                    <a href="contacto.html" class="link">Contacto</a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
+    </nav>
+</header>
 
     <!--Banner-->
     <div class="banner">
+        <div class="banner-content">
         <h1>Lugares para visitar</h1>
-        <p>Conoce cuales son los <strong>puntos mas icónicos de Dubái</strong></p>
+            <p>Conoce cuales son los <strong>puntos mas icónicos de Dubái</strong></p>
+        </div>
+        
     </div>
         
         <!-- Pagina -->

@@ -10,6 +10,7 @@ main , nav , header , footer{
     --color_secundario: #442DDF;
     --color_secundario_oscuro: #150A20;
     --color_gris: #E2E2E2;
+    --color_gris_oscuro: #C6C6C6;
     --altura_header: 80px;
     --padding_left_right: 2rem;
     --ancho_maximo: 1200px;
@@ -101,7 +102,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     transition: all .3s;
 }
 
@@ -122,7 +123,7 @@ span{
     color: var(--color_secundario_oscuro);
 }
 
-.ul_links li:last-child a{
+.boton a{
     background-color: var(--color_primario);
     padding: 1rem;
     border-radius: 10px;
@@ -132,13 +133,41 @@ span{
     color: var(--color_gris);
 }
 
-.ul_links li:last-child a:hover{
+.boton a:hover{
     color: var(--color_secundario_oscuro);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.visitemos{
+.ul_links li ol {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
     display: none;
+}
+
+.ul_links li ol li{
+    position: relative;
+    width: 100%;
+    background-color: var(--color_gris);
+    transition: all .3s;
+    
+}
+
+.ul_links li ol li a{
+    color: var(--color_secundario_oscuro);
+    font-size: 1.2em;
+    padding: 1rem;
+    display: block;
+    transition: all .5;
+}
+
+.ul_links li ol li a:hover{
+    background-color: var(--color_gris_oscuro);
+}
+
+.ul_links li:hover ol {
+    display: block;
 }
 
 /*---------------banner---------------*/
@@ -796,7 +825,30 @@ footer ul{
 }
 /*---------------tablet---------------*/
 @media (min-width:480px){
+    .banner {
+        display: flex;
+        background-image: url(../img/bg-db-tablet.jpg);
+        background-size: cover;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 
+    .banner-content{
+        align-self: center;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .banner h1{
+        padding: 0;
+        margin: 0;
+    }
     /*---------------carrousel---------------*/
     .slider-wrapper {
         max-width: 480px;
@@ -819,32 +871,76 @@ footer ul{
     }
 
     .ul_links{
-        background-color: transparent;
         position: static;
         width: auto;
-        height: auto;
+        height: var(--altura_header);
         flex-direction: row;
-        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #B153C6;
     }
 
+    .li_links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(var(--altura_header) + 2px);
+       
+    } 
+    .li_links:hover{
+        cursor: pointer;
+    }
     .link{
         font-size: 1.2rem;
         transition: all .3s;
-        padding: .2rem .7rem;
         color: var(--color_secundario_oscuro);
         font-weight: bold;
     }
 
-    .link:hover{
+    .link a:hover{
         color: #5f1192;
     }
     
-    .ul_links li:last-child{
+    .boton{
         padding: 1rem;
         border-radius: 10px;
         cursor: pointer;
     }
 
+    .ul_links li ol {
+        width: 200px;
+        position: absolute;
+        left: auto;
+        top: var(--altura_header);
+    }
+
+    /*---------------banner---------------*/
+    .banner {
+        display: flex;
+        background-image: url(../img/bg-db-desktop.jpg);
+        background-size: cover;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner-content{
+        align-self: center;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .banner h1{
+        padding: 0;
+        margin: 0;
+    }
+
+    
     /*---------------carrousel---------------*/
     .slider-wrapper {
         max-width: 889px;
