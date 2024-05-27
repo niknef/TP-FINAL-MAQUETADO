@@ -1048,6 +1048,13 @@ button {
     transform: translateY(10px);
     transition: 100ms;
   }
+
+.volver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
   
 
 /*---------------tablet---------------*/
