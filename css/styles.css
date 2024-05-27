@@ -913,7 +913,143 @@ footer ul{
 
 .card:hover .content{
     opacity: 1;
+}/*---------------contacto---------------*/
+#itinerario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+#itinerario h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 2rem;
+    color: var(--color_secundario_oscuro);
+}
+#itinerario p{
+    width: 80%;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    align-self: center;
+    background-color: #442DDF;
+    color: var(--color_blanco);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+form legend{
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+}
+
+
+form label{
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+form input, form textarea{
+    width: 95%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+.comentario, .fecha, .personal{
+    align-self: start;
+}
+.interes .checkmark{
+    width: 18px;
+    height: 18px;
+}
+
+.interes{   
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    
+}
+
+.interes label{
+    margin: 0;
+}
+
+.comentario textarea{
+    margin-top: 1.5rem;
+    width: 95%;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    background-color: var(--color_blanco);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: rgba(102,102,102,0.8);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+textarea:focus, input:focus{ 
+    outline: none;
+    border: 2px solid var(--color_primario);
+    box-shadow: rgba(248, 45, 232, 0.3)
+    0px 3px 8px;
+
+}
+
+.comentario legend{
+    display: none;
+}
+.comentario label{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: var(--color_blanco);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    letter-spacing: 3px;
+    background-color:var(--color_primario);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: var(--color_primario);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+
 /*---------------tablet---------------*/
 @media (min-width:480px){
     .banner {

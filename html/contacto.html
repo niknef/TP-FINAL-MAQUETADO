@@ -74,8 +74,7 @@
         <main>
             
             <!--itinerario-->
-            <span class="ir-arriba icon-arrow-up2"></span>
-            <section>
+            <section id="itinerario">
                 
                 <h2>Personaliza tu itinerario</h2>
 
@@ -86,64 +85,54 @@
             </section>
 
             <!--FORM-->
+
+<div class="formulario">
+
+    <form action="../html/gracias.html" method="POST" enctype="multipart/form-data">
+        
+        <fieldset class="personal">
+            <legend>Información Personal</legend>
+            <label for="nombre">*Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off" required>
             
-            <div>
-                
-                <form action="../html/gracias.html" method="POST" enctype="multipart/form-data">
-                    
-                    <div class="personal">
-                    <span>*Nombre:</span>
-                        <input type="text" name="nombre" autocomplete="off" required>
-                    <span>*Apellido:</span>
-                        <input type="text" name="Apellido" autocomplete="off" required>
-                    <span>*Email:</span>
-                        <input type="email" name="email" autocomplete="off" required>
-                    
-                        <div class="fecha">
-                            <span>Fecha de viaje:</span>
-                                <label for="start">Desde:</label>
-
-                                        <input type="date" id="start" name="trip-start" value="2022-11-15" min="2022-11-15" max="2024-12-01">
-                    
-                    
-                                <label for="finish">Hasta:</label>
-
-                                        <input type="date" id="finish" name="trip-finish" value="2022-11-20" min="2022-11-15" max="2024-12-15" >
-                            </div>
-                        
-                    </div>
-
-                    <div class="interes">
-                       
-                    <span>Intereses:</span>
-                        
-                        <label><input class="checkmark" type="checkbox" name="arquitectura"> Arquitectura </label>
-                        
-                        <label><input class="checkmark" type="checkbox" name="arte"> Arte </label>
-                        
-                        <label><input class="checkmark" type="checkbox" name="gastronomia"> Gastronomía </label>
-                        
-                        <label><input class="checkmark" type="checkbox" name="compras"> Compras </label>
-                        
-                        <label><input class="checkmark" type="checkbox" name="otros"> Otros </label>
-                
-
-                        <div class="comentario">
-                            <span>Agrega un comentario:</span>
-                            <textarea name="mensaje">Escriba su comentario..</textarea>
-                            
-
-                        </div>
-                    </div>
-
-                    <div class="button">
-                        <input type="submit" value="Enviar" id="envio" >
-                    </div>
-                    
-                    
-                </form>
-                </div>
+            <label for="apellido">*Apellido:</label>
+            <input type="text" id="apellido" name="apellido" autocomplete="off" required>
             
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="email" autocomplete="off" required>
+        </fieldset>
+
+        <fieldset class="fecha">
+            <legend>Fecha de Viaje</legend>
+            <label for="start">Desde:</label>
+            <input type="date" id="start" name="trip-start" value="2022-11-15" min="2024-05-15" max="2025-12-01">
+        
+            <label for="finish">Hasta:</label>
+            <input type="date" id="finish" name="trip-finish" value="2022-11-20" min="2024-05-16" max="2025-12-15">
+
+            <label for="pasaje">Carga tu pasaje de avión:</label>
+            <input type="file" id="pasaje" name="pasaje" accept="image/*" required>
+        </fieldset>
+        
+        <fieldset class="interes">
+            <legend>Intereses</legend>
+            <label><input class="checkmark" type="checkbox" name="intereses" value="arquitectura"> Arquitectura </label>
+            <label><input class="checkmark" type="checkbox" name="intereses" value="arte"> Arte </label>
+            <label><input class="checkmark" type="checkbox" name="intereses" value="gastronomia"> Gastronomía </label>
+            <label><input class="checkmark" type="checkbox" name="intereses" value="compras"> Compras </label>
+            <label><input class="checkmark" type="checkbox" name="intereses" value="otros"> Otros </label>
+        </fieldset>
+
+        <fieldset class="comentario">
+            <legend>Comentario</legend>
+            <label for="mensaje">Agrega un comentario:</label>
+            <textarea id="mensaje" name="mensaje">Escriba su comentario..</textarea>
+        </fieldset>
+
+        <button type="submit" id="envio">Enviar</button>
+    </form>
+
+</div>   
         </main>
 
         <!--footer-->
