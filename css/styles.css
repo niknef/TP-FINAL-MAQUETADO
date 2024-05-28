@@ -285,30 +285,36 @@ span{
     }
 }
 
-#mapa h2{
+#mapa h2 {
     color: var(--color_blanco);
     font-size: 1.5em;
 }
 
-#mapa p{
-    margin: 0 1.5rem;
+#mapa p {
+    margin: 0.5rem 1.5rem;
     color: var(--color_blanco);
     text-align: left;
 }
 
-#mapa em{
+#mapa em, #mapa strong, #mapa span {
     color: var(--color_blanco);
 }
 
-#mapa strong{
-    color: var(--color_blanco);
-}
-#mapa span{
+#mapa span {
     color: var(--color_primario_suave);
 }
 
-#mapa iframe{
-    width: 340px;
+.ubi-content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#mapa iframe {
+    width: 100%;
     height: 300px;
     border-radius: 10px;
     margin: 1rem 0;
@@ -726,6 +732,13 @@ footer ul{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#cuando p{
+    width: 80%;
+    text-align: left;
+    margin: 1rem 0;
+
+}
+
 
 /*---------------eventos---------------*/
 #eventos{
@@ -811,7 +824,6 @@ footer ul{
 }
 
 #innovacion p{
-    width: 80%;
     font-size: 1rem;
     text-align: left;
 }
@@ -959,14 +971,14 @@ form legend{
     margin-bottom: 1rem;
 }
 
-
 form label{
     font-size: 1rem;
-    margin: 0.5rem 0 0.5rem 1rem;
+
 }
+
 form input, form textarea{
     width: 95%;
-    margin: 0.5rem;
+    margin: 1rem 0 1rem 1rem;
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
@@ -1011,7 +1023,9 @@ textarea:focus, input:focus{
     0px 3px 8px;
 
 }
-
+.comentario{
+    width: 100%;
+}
 .comentario legend{
     display: none;
 }
@@ -1093,8 +1107,69 @@ button {
         width: 480px;
         height: 270px;
     }
+    /*---------------dubai---------------*/
+    #dubai iframe{
+        width: 70%;
+    }
 
+    #dubai div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #dubai p{
+        width: 70%;
+    }
+    /*---------------historia---------------*/
+    #historia h2, #clima h2, #moneda h2, #actividades h2{
+        padding-left: 5rem;
+    }
+
+    #historia p , #clima p{
+        width: 70%;
+    }
+    /*---------------Ubicacion---------------*/
+    #mapa iframe {
+        height: 400px;
+    }
+
+    /*---------------Informacion---------------*/
+    #antesviaje p, #moneda p, #cuando p{
+        width: 70%;
+        font-size: 1em;
+    }
+    #requisitos h2{
+        padding: 1rem 0 1rem 5rem;
+    
+    }
+
+    .columnados{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        align-self: center;
+    
+    }
+
+    .columnados fieldset{
+        width: 40%;
+    }
+    
+    .columnados fieldset:last-child{
+        min-width: 200px ;
+    }
+
+    .columnados fieldset:first-child{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
 }
+
 
 /*---------------desktop---------------*/
 @media (min-width:800px){
@@ -1148,7 +1223,9 @@ button {
         top: var(--altura_header);
     }
 
-    /*---------------banner---------------*/
+    .no-mobile{
+        display: block;
+    }
     .banner {
         display: flex;
         background-image: url(../img/bg-db-desktop.jpg);
@@ -1174,6 +1251,49 @@ button {
         margin: 0;
     }
 
+    .text p{
+        margin: 1rem 0;
+    }
+    
+    .text, #mapa iframe, #innovacion iframe{
+        width: 48%;
+    }
+
+    #innovacion iframe{
+        height: 24.05vw;
+    }
+
+    #requisitos h2{
+        padding: 1rem 0 1rem 5rem;
+    
+    }
+    
+    .text ul{
+        width: 35%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .ubi-content{
+        width: 90%;
+    }
+
+    #requisitos div:last-child{
+        width: 80%;
+    }
+
+    #lugares > p{
+        width: 70%;
+        margin: 1rem 0;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    .personal{
+        width: 100%;
+    }
     
     /*---------------carrousel---------------*/
     .slider-wrapper {
