@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/styles.css">
+        <link rel ="stylesheet" href="goup/fonts.css">
         <link rel ="icon" href="icon/burj-al-arab.ico">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="scripts/html5shiv.js"></script>
+        <script src="scripts/prefixfree.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
@@ -70,16 +74,16 @@
             </div>
             
         </div>
-
+        
         <!-- Pagina -->
         <main>
+            <span class="ir-arriba icon-arrow-up2"></span>
             <section id="dubai">
                 
                 <h2>¿Qué es Dubái?</h2>
-    
-                <iframe src="https://www.youtube.com/embed/hq8j6J3539o?si=_kcb0iLNPAlw1zcg&mute=1&controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 
-                <div>
+                <div class="ubi-content">
+                    <div class="text">
                     <p><strong>Dubái es la <span>capital de uno de los siete Emiratos que conforman los Emiratos Árabes Unidos.</span> Se encuentra en la punta de la península arábiga.</strong></p>
                    
                     <p class="no-mobile"><span>Dubái está dividida por Dubái Creek</span>, una brecha de agua salada que divide la ciudad. Al norte de la brecha, la zona alberga gran cantidad de especias, pescado y oro en zocos. El lado sur, en cambio, es una zona con una fuerte influencia india.</p>
@@ -87,6 +91,9 @@
                     <p><em><span>Es la ciudad más importante de los siete emiratos que componen los Emiratos Árabes Unidos.</span> La ciudad se ha expandido cerca de la costa y tiene más de 50 kilómetros de extensión.</em></p>
                 </div>
                 
+                    <iframe src="https://www.youtube.com/embed/hq8j6J3539o?si=_kcb0iLNPAlw1zcg&mute=1&controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                </div>
             </section>
 
             <!--historia-->
@@ -94,19 +101,21 @@
             <section id="historia">
                 
                 <h2>Historia</h2>
-                
-                    <p>Originalmente, Dubái fue una descendencia de la tribu de Bani que era una colonia de pescadores.</p>
+                <div class="ubi-content">
+                    <div class="text">
+                    <figure>
+                        <img src="img/dubaiantes.jpg" alt="Dubái antes de su expanción">
+                    </figure>
 
-                <figure>
-                    <img src="img/dubaiantes.jpg" alt="Dubái antes de su expanción">
-                </figure>
+                    <p>Originalmente, Dubái fue una descendencia de la tribu de Bani que era una colonia de pescadores.</p>
                 
                     <p><strong>En 1830 una descendencia de la tribu de Bani Yas del oasis de Liwa dirigida por la familia de Maktoum se apoderó de la ciudad y la sigue gobernando hasta la fecha.</strong></p>
                 
                     <p>Pasó de ser un lugar de asentamientos beduinos a <span> una ciudad moderna con más de 500 rascacielos.</span></p>
                 
                     <p class="no-mobile"><strong>Es una de las metrópolis de más rápido crecimiento en el mundo y alberga algunos de los principales e impresionantes proyectos (rascacielos y edificios de alta tecnología) de construcción del mundo.</strong></p>
-
+                </div>
+                    <div class="text">
                     <p><em>Si bien la economía tuvo un auge importante a partir del desarrollo de la industria petrolera en el país,</em><strong> <span>los sectores que generan más ingresos en el emirato son la construcción, el comercio, el entrepôt y los servicios financieros.</span></strong></p>
 
                     <p class="no-mobile"><strong>El enfoque turístico también es destacable, en especial aquel destinado a las compras.</strong> <span>Dubái alberga varias construcciones y obras de infraestructura notables </span>como los <em>hoteles de lujo <span class="italica">Burj Al Arab y Burj Khalifa</span>, los puertos de <span class="italica">Mina Rashid y Jebel Ali</span> y el conjunto habitacional de islas artificiales <span class="italica">The World y The Palm Islands.</span></em></p>
@@ -116,7 +125,8 @@
                 <figure>
                     <img src="img/dubaidespues.jpg" alt="Dubái despues de su expanción">
                 </figure>
-                   
+            </div>
+            </div>
             </section>
 
             <!--Ubicacion-->
@@ -125,6 +135,7 @@
             
                 <h2 id="ubicacion">Ubicación</h2>
                 <div class="ubi-content">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.6828063321!2d54.89783450948305!3d25.076280452023973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDub%C3%A1i%20-%20Emiratos%20%C3%81rabes%20Unidos!5e0!3m2!1ses!2sar!4v1716322552839!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="text">
                     <p><strong>El emirato de Dubái está <span>situado en la costa del golfo Pérsico </span>de los Emiratos Árabes Unidos.</strong></p>
 
@@ -135,7 +146,7 @@
                     <p><em><span>Tiene una superficie de 4114 <abbr title= "kilometros cuadrados">km²</abbr></span>, una importante expansión —debido a las reclamaciones sobre su soberanía en el mar—, ya que en sus inicios contaba con 3885 <abbr title= "kilometros cuadrados">km²</abbr>.</em></p>
                 </div>
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.6828063321!2d54.89783450948305!3d25.076280452023973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDub%C3%A1i%20-%20Emiratos%20%C3%81rabes%20Unidos!5e0!3m2!1ses!2sar!4v1716322552839!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
             
         </div>
 
@@ -207,10 +218,12 @@
             <section id = "cultura">
                 
                 <h2>Cultura</h2>
-                        
+                        <div class="ubi-content">
+                            <div class="text">
                         <p class="no-mobile">Dubái es catalogada como una sociedad cosmopólita debido al desarrollo cultural que ha experimentado con el transcurso del tiempo. <span><em>Esto queda reflejado en su arquitectura, música, indumentaria, cocina y estilo de vida en general.</em></span></p>
                         
                         <p class="no-mobile">No obstante, su identidad islámica y beduina predominante, 20 en donde la religión tiene una especial relevancia para sus habitantes,<strong><span> le confiere también un carácter tradicionalista y conservador.</span></strong></p>
+                    </div>
                         
                         <div class="acordeon">
                         
@@ -243,7 +256,7 @@
                             </details>
                         
                         </div>
-            
+                    </div>
             </section>
 
             <!--Clima-->
@@ -267,33 +280,42 @@
            
         </main>
 
-        <!--footer-->
-        
+        <!--footer--> 
         <footer>
+            <div class="politicas"> 
+                <div>
                     <h2>Alumno: Nicolás firpo</h2>
                         <p>Tp Final - 1 Cuatrimestre</p>
+                </div>
+                
+                <div>
                     <h2>Profesora: Mabel García</h2>
                         <p>Maquetado y desarrollo Web</p>
+                </div>
+            </div>
+        
+            <div class="politicas">       
                 <div>
                     <ul>
                         <li>Politicas de privacidad</li>
                         <li>Condiciones de uso</li>
                     </ul>
-                </div>
-                <div id="redes">
-                    <ul id="iconos" >
-                        <li id="fb" ><a target="_blank" href="https://www.facebook.com/places/Cosas-que-hacer-en-Dubai-ciudad/111070818917271/">Facebook</a></li>
-                        <li id="tw"><a target="_blank" href="https://twitter.com/DXBMediaOffice">Twitter</a></li>
-                        <li id="yt"><a target="_blank" href="https://www.youtube.com/watch?v=Ex2iAyaEElQ&t=39s">YouTube</a></li>
-                        <li id="ig"><a target="_blank" href="https://www.instagram.com/dubai/">Instagram</a></li>
-                    </ul>
-                </div>
+            </div>
+        
+            <div id="redes">
+                <ul id="iconos" >
+                    <li id="fb" ><a target="_blank" href="https://www.facebook.com/places/Cosas-que-hacer-en-Dubai-ciudad/111070818917271/">Facebook</a></li>
+                    <li id="tw"><a target="_blank" href="https://twitter.com/DXBMediaOffice">Twitter</a></li>
+                    <li id="yt"><a target="_blank" href="https://www.youtube.com/watch?v=Ex2iAyaEElQ&t=39s">YouTube</a></li>
+                    <li id="ig"><a target="_blank" href="https://www.instagram.com/dubai/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
 
-           <div id="copy">
-                <p>Copyright &#169; 2022 - Escuela Da Vinci</p>
-           </div>
-
-        </footer>
-
+        <div id="copy">
+            <p>Copyright &#169; 2022 - Escuela Da Vinci</p>
+        </div>
+</footer>
+    <script src="scripts/boton.js"></script>
     </body>
 </html>

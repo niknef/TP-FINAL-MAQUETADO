@@ -198,7 +198,11 @@ span{
 
 /*---------------Pagina---------------*/
 #dubai{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
 }
 
 #dubai h2{
@@ -208,10 +212,10 @@ span{
 }
 
 #dubai p{
-    font-size: 1em;
-    margin: 1em;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
 }
-
 .no-mobile{
     display: none;
 }
@@ -408,7 +412,6 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 1rem;
     margin: 1rem 0;
     background-color: var(--color_blanco);
     padding: 2rem;
@@ -964,6 +967,7 @@ form{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     padding: 1.5rem;
+    max-width: 720px;
 }
 
 form legend{
@@ -1069,8 +1073,18 @@ button {
     align-items: center;
     margin: 1rem 0;
 }
-  
 
+.ir-arriba {
+	padding:20px;
+	background: var(--color_primario);
+    border-radius: 50%;
+	font-size:20px;
+	color:var(--color_blanco);
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
 /*---------------tablet---------------*/
 @media (min-width:480px){
     .banner {
@@ -1107,28 +1121,15 @@ button {
         width: 480px;
         height: 270px;
     }
-    /*---------------dubai---------------*/
-    #dubai iframe{
-        width: 70%;
-    }
-
-    #dubai div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #dubai p{
-        width: 70%;
-    }
+   
     /*---------------historia---------------*/
     #historia h2, #clima h2, #moneda h2, #actividades h2{
         padding-left: 5rem;
     }
 
-    #historia p , #clima p{
+    #clima p, #historia p,  #antesviaje p, #moneda p, #cuando p{
         width: 70%;
+        font-size: 1em;
     }
     /*---------------Ubicacion---------------*/
     #mapa iframe {
@@ -1136,13 +1137,19 @@ button {
     }
 
     /*---------------Informacion---------------*/
-    #antesviaje p, #moneda p, #cuando p{
-        width: 70%;
-        font-size: 1em;
-    }
     #requisitos h2{
         padding: 1rem 0 1rem 5rem;
     
+    }
+
+    .columnas{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .columnacontent{
+        width: 48.5%;
     }
 
     .columnados{
@@ -1153,7 +1160,7 @@ button {
         align-self: center;
     
     }
-
+    
     .columnados fieldset{
         width: 40%;
     }
@@ -1168,6 +1175,7 @@ button {
         align-content: center;
         flex-direction: column;
     }
+
 }
 
 
@@ -1255,11 +1263,11 @@ button {
         margin: 1rem 0;
     }
     
-    .text, #mapa iframe, #innovacion iframe{
+    .text, #mapa iframe, #innovacion iframe, #dubai iframe{
         width: 48%;
     }
 
-    #innovacion iframe{
+    #innovacion iframe, #dubai iframe{
         height: 24.05vw;
     }
 
@@ -1274,10 +1282,26 @@ button {
         margin: 0;
         padding: 0;
     }
+    
     .ubi-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
         width: 90%;
     }
 
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acordeon{
+        width: 40vw;
+    }
+    
     #requisitos div:last-child{
         width: 80%;
     }
@@ -1304,6 +1328,16 @@ button {
         width: 889px;
         height: 500px;
     }
+    /*---------------footer---------------*/
+    .politicas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+
+    
 }
 
 #creek, #museo, #mezquita, #khalifa, #fuente, #arab{
