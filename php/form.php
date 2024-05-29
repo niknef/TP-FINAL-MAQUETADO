@@ -4,7 +4,7 @@ $apellido = $_POST ['apellido'];
 $email = $_POST ['email'];
 $tripStart = $_POST ['trip-start'];
 $tripFinish = $_POST ['trip-finish'];
-$pasaje = $_POST ['pasaje'];
+$pasaje = $_FILES ['pasaje'];
 $intereses = $_POST ['intereses'];
 
 $mensaje = "<h1>". $nombre . $apellido ."</h1>";
@@ -14,7 +14,7 @@ $mensaje .= "<p> Sus intereses son: ". $intereses ."</p>";
 $mensaje .= "<p> Comentario: </p>";
 $mensaje .= $_POST ['mensaje'];
 
-$para = 'mail@ejemplo.com'
+$para = 'mail@ejemplo.com';
 $asunto = 'Posible clinte = ' . $nombre;
 
 $headers = "Mime-version: 1.0\r\n";

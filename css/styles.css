@@ -1214,6 +1214,23 @@ textarea:focus, input:focus{
     .link a:hover{
         color: #5f1192;
     }
+
+    .link:active{
+        color: var(--color_primario);
+    }
+
+    .link a:active{
+        color: var(--color_primario);
+    }
+
+    .ul_links:active{
+        color: var(--color_primario);
+    }
+    
+    .ul_links a:active{
+        color: var(--color_primario);
+    }
+    
     
     .boton{
         padding: 1rem;
