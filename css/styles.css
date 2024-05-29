@@ -159,7 +159,6 @@ span{
     font-size: 1.2em;
     padding: 1rem;
     display: block;
-    transition: all .5;
 }
 
 .ul_links li ol li a:hover{
@@ -349,13 +348,9 @@ span{
 	scroll-behavior: smooth;
 	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 	border-radius: 10px;
-	-ms-overflow-style: none; 
 	scrollbar-width: none; 
 }
 
-.slider::-webkit-scrollbar {
-	display: none;
-}
 
 .slider img {
 	scroll-snap-align: start;
@@ -557,6 +552,9 @@ footer ul{
     background-position: -49px 42px;
 }
 
+#copy p{
+    margin: 1rem 0;
+}
 /*---------------//informacion//---------------*/
 /*---------------antesviaje---------------*/
 #antesviaje{
@@ -895,7 +893,6 @@ footer ul{
     background: var(--i);
     display: inline-block;
     box-shadow: 3px 5px 5px rgba(3, 32, 51 , .8);
-
 }
 
 .content{
@@ -1335,6 +1332,14 @@ textarea:focus, input:focus{
         align-items: center;
         justify-content: space-between;
         gap: 2.5rem;
+    }
+
+    #copy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 
     
