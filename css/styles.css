@@ -28,7 +28,7 @@ html{
     scroll-behavior: smooth;
 }
 
-h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , em{
+h2 , h3 , h4 , h5 , h6 , p , span , a , strong, em , blockquote {
     font-size: 1em;
     font-weight:  inherit;
     font-style: inherit;
@@ -245,7 +245,12 @@ span{
     color: var(--color_blanco);
     font-size: 1.5em;
 }
-
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #historia p{
     width: 80%;
     text-align: left;
